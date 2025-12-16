@@ -6458,7 +6458,7 @@ local TeleportCheck = false
 Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if KeepInfYield and (not TeleportCheck) and queueteleport then
 		TeleportCheck = true
-		queueteleport("loadstring(game:HttpGet(''))()")
+		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/viomod/infiniteyield-better/master/source.lua'))()")
 	end
 end)
 
@@ -13176,4 +13176,5 @@ task.spawn(function()
 	Credits:Destroy()
 	IntroBackground:Destroy()
 	minimizeHolder()
+
 end)
